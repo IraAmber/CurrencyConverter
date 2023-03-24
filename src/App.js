@@ -7,19 +7,16 @@ function CurrencyConverter() {
   const [to, setTo] = useState("UAH");
   const [amount, setAmount] = useState(1);
   const [convertAmount, setConvertAmount] = useState(0);
-  const access_key = "UavksTApjrigzylBn6XzsEwV7Z5vcztr";
+  const access_key = 'JBirTbz2NQ9oliNwO04yVPByZo8587yw';
 
   useEffect(() => {
     const fetchCurrencyRate = async () => {
-      if (from && to && amount) {
-        // перевіряємо чи значення не рівні null або undefined
         const response = await fetch(
-          `https://api.exchangeratesapi.io/latest?access_key=${access_key}&base=${from}&symbols=${to}`
-        );
+              `https://api.exchangeratesapi.io/v1/latest?access_key=${access_key}&base=${from}&symbols=${to}`
+           );
         const data = await response.json();
         setRate(data.rates[to]);
-      }
-    };
+      };
 
     fetchCurrencyRate();
   }, [from, to]);
