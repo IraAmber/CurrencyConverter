@@ -1,0 +1,52 @@
+:root {
+  --main-color: rgb(69, 93, 199);
+}
+
+.app {
+  display: block;
+  margin: 0 auto;
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+  height: 350px;
+  width: 550px;
+  font-size: 20px;
+}
+
+header {
+  background-color: var(--main-color);
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+h1 {
+  margin: 10px;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+input,
+select {
+  margin: 0.5px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid var(--main-color);
+}
+
+input[type="number"] {
+  width: 100px;
+}
+
+select {
+  min-width: 100px;
+}
