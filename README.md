@@ -43,3 +43,6 @@ handleAmountChange(): змінює суму для конвертації
 
 на хостингу:
 https://candid-starship-6c0500.netlify.app/
+
+
+! API is not working (wrong key). I wrote to the support service.
